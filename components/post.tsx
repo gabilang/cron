@@ -75,6 +75,7 @@ export default function Post({ interval }: { interval: string }) {
   )
 }
 
+
 const timeAgo = (time: number): string => {
   if (!time) return 'Never'
   return `${ms(Date.now() - new Date(time).getTime())} ago`
